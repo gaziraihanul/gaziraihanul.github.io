@@ -51,10 +51,28 @@ header{
 
 header h1{
     font-family:'Cormorant Garamond', serif;
-    font-size:4rem;
     color:var(--gold);
-    margin-bottom:15px;
-    letter-spacing:1px;
+
+    font-weight:600;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:3.5rem;
+}
+
+.preferred-name{
+    display:block;
+
+    font-size:5.5rem;
+
+    color:#f2d06b;
+
+    text-shadow:
+        0 0 20px rgba(212,175,55,.3);
 }
 
 header p{
