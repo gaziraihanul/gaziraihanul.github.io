@@ -1,46 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaziraihanul Amin</title>
     <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
 <nav class="navbar">
     <div class="nav-container">
-
-        <a href="#about">✦ About Me </a>
-
-        <a href="#skills">✦ Skills </a>
-
-        <a href="#experience">✦ Experience </a>
-
-        <a href="#projects">✦ Projects </a>
-            
-        <a href="#contact">✦ Contact </a>
-
+        <a href="#about">✦ About Me</a>
+        <a href="#skills">✦ Skills</a>
+        <a href="#experience">✦ Experience</a>
+        <a href="#projects">✦ Projects</a>
+        <a href="#contact">✦ Contact</a>
     </div>
 </nav>
 
 <div class="container">
 
 <header>
-
     <h1>
         Gaziraihanul
         <span class="preferred-name">Raihan Amin</span>
-        
     </h1>
-
-    <p>
-        Data, Analytics & Strategy
-    </p>
-
+    <p>Data, Analytics & Strategy</p>
 </header>
 
 <section id="about">
-
     <h2>About Me</h2>
 
     <p>
@@ -66,15 +54,12 @@
         analytics, and strategy, bringing technical rigor and analytical thinking
         to problems that benefit from smarter, evidence-driven decisions.
     </p>
-
 </section>
 
 <section id="skills">
-
     <h2>Skills</h2>
 
     <div class="skills">
-
         <span class="skill-tag">Python</span>
         <span class="skill-tag">SQL</span>
         <span class="skill-tag">Power BI</span>
@@ -90,23 +75,15 @@
         <span class="skill-tag">Data Visualization</span>
         <span class="skill-tag">Data Governance</span>
         <span class="skill-tag">Business Analysis</span>
-
     </div>
-
 </section>
 
-
 <section id="experience">
-
     <h2>Experience</h2>
 
     <div class="project-card">
         <h3>Procurement Data Analyst Intern</h3>
-
-        <p>
-            City of Toronto • 2026 - Present
-        </p>
-
+        <p class="meta">City of Toronto • 2026 - Present</p>
         <p>
             Supporting procurement modernization initiatives through data governance,
             supplier analytics, process improvement, and operational reporting.
@@ -115,11 +92,7 @@
 
     <div class="project-card">
         <h3>Data & Insights Analyst</h3>
-
-        <p>
-            University of Toronto Muslim Students' Association • 2025 - 2026
-        </p>
-
+        <p class="meta">University of Toronto Muslim Students' Association • 2025 - 2026</p>
         <p>
             Led survey research and analytics initiatives to generate insights
             that informed organizational planning and community engagement efforts.
@@ -128,11 +101,7 @@
 
     <div class="project-card">
         <h3>Data Analytics & Research Intern</h3>
-
-        <p>
-            Cluo • 2026
-        </p>
-
+        <p class="meta">Cluo • 2026</p>
         <p>
             Conducted data quality analysis and developed processes that improved
             information management and supported product development decisions.
@@ -141,65 +110,139 @@
 
     <div class="project-card">
         <h3>Data & Financial Analyst Intern</h3>
-
-        <p>
-            Roche • 2023
-        </p>
-
+        <p class="meta">Roche • 2023</p>
         <p>
             Analyzed and validated financial data while supporting reporting,
             reconciliation, and operational finance activities.
         </p>
     </div>
-
 </section>
 
-    
 <section id="projects">
     <h2>Projects</h2>
 
-    <div class="project-card">
-    <h3>IPO Return Prediction Using Machine Learning</h3>
+    <div class="project-grid">
 
-    <p>
-        Built machine learning models on 3,158 U.S. IPOs to investigate
-        whether short-term market hype or pre-IPO fundamentals better
-        explain long-run IPO performance.
+        <!-- Machine learning & forecasting -->
+        <article class="repo-card">
+            <h3>IPO Return Prediction Using Machine Learning</h3>
+            <p>
+                Machine learning models on 3,158 U.S. IPOs testing whether short-term
+                market hype or pre-IPO fundamentals better explain long-run performance.
+                XGBoost with temporal rolling-window cross-validation (R² of 0.384).
+            </p>
+            <div class="tech-tags">
+                <span>Python</span><span>XGBoost</span><span>scikit-learn</span>
+            </div>
+            <a href="projects/ipo-return-prediction.html">View Project →</a>
+        </article>
+
+        <article class="repo-card">
+            <h3>Canadian Federal Election Forecasting</h3>
+            <p>
+                Multilevel regression and poststratification (MRP) in R, combining
+                4,400 Canadian Election Study responses with 748K+ Census records
+                to model voter behaviour.
+            </p>
+            <div class="tech-tags">
+                <span>R</span><span>MRP</span><span>Statistical Modelling</span>
+            </div>
+            <!-- REPLACE with the real repo URL -->
+            <a href="https://github.com/gaziraihanul?tab=repositories" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="repo-card">
+            <h3>Weather Impact on Urban Crime Forecasting</h3>
+            <p>
+                Spatial and predictive modelling across 568K+ records, achieving
+                an 87% reduction in MSE.
+            </p>
+            <div class="tech-tags">
+                <span>Python</span><span>GeoPandas</span><span>scikit-learn</span>
+            </div>
+            <!-- REPLACE with the real repo URL -->
+            <a href="https://github.com/gaziraihanul?tab=repositories" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="repo-card">
+            <h3>SCQEF: Shariah-Compliant Quantitative Equity Framework</h3>
+            <p>
+                A multi-standard compliance classifier for equities, built with
+                market data from yfinance, XGBoost, and SHAP for model interpretability.
+            </p>
+            <div class="tech-tags">
+                <span>Python</span><span>XGBoost</span><span>SHAP</span><span>yfinance</span>
+            </div>
+            <!-- REPLACE with the real repo URL -->
+            <a href="https://github.com/gaziraihanul?tab=repositories" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <!-- AI & LLM engineering -->
+        <article class="repo-card">
+            <h3>Financial News Extraction API</h3>
+            <p>
+                A FastAPI service that ingests financial news feeds and uses
+                LLaMA 3.1 (via Groq) to extract structured information from articles.
+            </p>
+            <div class="tech-tags">
+                <span>FastAPI</span><span>feedparser</span><span>Groq / LLaMA 3.1</span>
+            </div>
+            <a href="https://github.com/gaziraihanul/financial-news-extractor" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <article class="repo-card">
+            <h3>Clinical Note Quality Checker</h3>
+            <p>
+                A rule-based engine that flags quality issues in clinical notes,
+                with LLM-generated explanations and K-means clustering to surface
+                patterns across notes.
+            </p>
+            <div class="tech-tags">
+                <span>Python</span><span>LLM</span><span>K-means</span>
+            </div>
+            <a href="https://github.com/gaziraihanul/clinical-note-checker" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+        <!-- Community-impact analytics -->
+        <article class="repo-card">
+            <h3>MSA Community Census</h3>
+            <p>
+                Survey analysis of 65 respondents with 25+ visualizations, delivered
+                to community leadership and used to inform institutional advocacy.
+            </p>
+            <div class="tech-tags">
+                <span>Python</span><span>Survey Research</span><span>Data Visualization</span>
+            </div>
+            <!-- REPLACE with the real repo URL -->
+            <a href="https://github.com/gaziraihanul?tab=repositories" target="_blank" rel="noopener">View on GitHub →</a>
+        </article>
+
+    </div>
+
+    <p class="more-link">
+        <a href="https://github.com/gaziraihanul?tab=repositories" target="_blank" rel="noopener">
+            See all repositories on GitHub →
+        </a>
     </p>
-
-    <aojects/ipo-return-prediction.html
-        View Project →
-    </a>
-</div>
-
-
 </section>
 
 <section id="contact">
-
     <h2>Contact</h2>
 
     <p>
         Email:
-        <a href="mailto:g.raihan.amin@gmail.com">
-            g.raihan.amin@gmail.com
-        </a>
+        <a href="mailto:g.raihan.amin@gmail.com">g.raihan.amin@gmail.com</a>
     </p>
 
     <p>
         GitHub:
-        <a href="https://github.com/gaziraihanul" target="_blank">
-            github.com/gaziraihanul
-        </a>
+        <a href="https://github.com/gaziraihanul" target="_blank" rel="noopener">github.com/gaziraihanul</a>
     </p>
 
     <p>
         LinkedIn:
-        <a href="https://www.linkedin.com/in/gaziraihanul-raihan-amin" target="_blank">
-            linkedin.com/in/gaziraihanul-raihan-amin
-        </a>
+        <a href="https://www.linkedin.com/in/gaziraihanul-raihan-amin" target="_blank" rel="noopener">linkedin.com/in/gaziraihanul-raihan-amin</a>
     </p>
-
 </section>
 
 <footer>
@@ -210,4 +253,3 @@
 
 </body>
 </html>
-
